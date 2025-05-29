@@ -1,7 +1,7 @@
-You couldn't see this repository. 
-Just for my only studies and notes.
-But if you think necessary, make yourself at home.
-Thx and God bless u!
+# You couldn't see this repository. 
+# Just for my only studies and notes.
+# But if you think necessary, make yourself at home.
+# Thx and God bless u!
 
 ```java
 package TratamentoExceptions;
