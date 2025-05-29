@@ -18,9 +18,9 @@ public class Program {
             System.out.println(arr[pos]);
         }
         catch(Exception e) {
-            //codigo a ser executado caso uma exception ocorra
-            //especifica o tipo da excecao a ser tratada
-            // pega esse 'algo'
+        //code to be executed if an exception occurs
+        //specifies the type of exception to be handled
+        //gets this 'something'
         }
     }
 }
@@ -176,9 +176,9 @@ import java.text.*;
 import java.util.*;
 
 public class Program {
-    // '.parse' could be an exception, nosso metodo 'main' pode lancar uma exception
-    // das duas uma: ou voce trata a exception (try/catch) ou voce lanca 'throws' a
-    // exception
+        // '.parse' could be an exception, our 'main' method could throw an exception
+        // one of two things: either you handle the exception (try/catch) or you throw the exception
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -262,7 +262,7 @@ public class Reservation {
         return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
     }
 
-    // propaguei a exception na assinatura do meu metodo para nao ter que precisar tratar as exceptions dentro do try/catch
+    // I propagated the exception in my method signature so I don't have to handle exceptions inside the try/catch
     public void updateDates(Date checkIn, Date checkOut) throws DomainException {
         Date now = new Date();
         if (checkIn.before(now) || checkOut.before(now)) {
@@ -305,8 +305,8 @@ public class DomainException extends Exception {
 
 
 
-// a minha excecao sendo uma extensao de Exception, o compilador obriga a tratar
-// sendo a minha excecao uma extensao de RunTimeException, o compilador nao obriga a tratar
+// my exception being an extension of Exception, the compiler forces it to be handled
+// my exception being an extension of RunTimeException, the compiler does not force it to be handled
 ```
 
 # IMPORTANT
