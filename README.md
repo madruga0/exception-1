@@ -308,3 +308,11 @@ public class DomainException extends Exception {
 // a minha excecao sendo uma extensao de Exception, o compilador obriga a tratar
 // sendo a minha excecao uma extensao de RunTimeException, o compilador nao obriga a tratar
 ```
+
+# IMPORTANT
+## What is the difference between Exception and RuntimeException? 
+> Let's understand the fundament of Java about problems: **whenever something can be done with the problem, an exception must be captured**
+### RuntimeException
+> when an exception **can be** prevented
+### Exception
+> For errors that **must be** prevented, `Exception` is used, which is more generic and involves any exception, including a `RuntimeException` since all exceptions must be derived from `Exception`.
